@@ -1,0 +1,156 @@
+footer {
+  --title-mb: 5px;
+
+  padding: 40px 20px;
+  background-color: var(--clr-primary-400);
+
+  main {
+    width: 80vw;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 20px;
+
+    border-bottom: 1px solid var(--clr-neutral-900);
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+
+    .brand {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 10px;
+
+      .brand-logo {
+        padding: 3px;
+
+        border: 1px solid var(--clr-neutral-900);
+        border-radius: 100%;
+
+        width: 45px;
+        aspect-ratio: 1 / 1;
+        object-fit: contain;
+      }
+
+      .brand-typography {
+        font-family: var(--ff-primary-heading);
+        font-size: var(--fs-primary-heading);
+      }
+    }
+
+    .sublinks {
+      .title {
+        font-size: var(--fs-subheading);
+        font-family: var(--ff-secondary-heading);
+
+        margin-bottom: var(--title-mb);
+      }
+
+      .sublink-item {
+        list-style: none;
+
+        padding-left: 10px;
+
+        font-size: var(--fs-body);
+
+        transition: opacity 300ms, text-decoration 300ms;
+
+        &:hover {
+          opacity: 0.5;
+
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .sosmeds {
+      .title {
+        font-size: var(--fs-subheading);
+        font-family: var(--ff-secondary-heading);
+
+        margin-bottom: var(--title-mb);
+      }
+
+      .sosmed-item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+
+        padding-left: 10px;
+
+        font-size: var(--fs-300);
+
+        .item-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+
+    .contacts {
+      .title {
+        font-size: var(--fs-subheading);
+        font-family: var(--ff-secondary-heading);
+
+        margin-bottom: var(--title-mb);
+      }
+
+      .contact-item {
+        display: flex;
+        justify-content: start;
+        align-items: start;
+        gap: 10px;
+
+        padding-left: 10px;
+
+        .item-icon {
+          margin-top: 3px;
+          font-size: var(--fs-300);
+        }
+
+        .item-info {
+          .info-label {
+            font-size: var(--fs-300);
+            font-family: var(--ff-secondary-heading);
+          }
+          .info-contact {
+            font-size: var(--fs-300);
+          }
+        }
+      }
+    }
+  }
+
+  .copyright {
+    font-size: var(--fs-400);
+    text-align: center;
+
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 50px var(--section-padding-md);
+
+    main {
+      width: 100%;
+
+      grid-template-columns: repeat(4, 1fr);
+
+      justify-items: center;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  footer {
+    main {
+      width: 80vw;
+      margin: auto;
+    }
+  }
+}

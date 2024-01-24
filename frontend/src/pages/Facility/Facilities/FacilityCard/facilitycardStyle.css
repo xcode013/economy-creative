@@ -1,0 +1,45 @@
+#facilityPage {
+  .facilities {
+    .facility-card {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      flex-direction: column;
+      gap: 0px;
+
+      padding: var(--padding);
+
+      background-color: rgb(245, 245, 245);
+
+      border-radius: 10px;
+
+      box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+
+      .card-icon {
+        font-size: var(--fs-secondary-heading);
+        padding-left: 15px;
+      }
+
+      &:hover {
+        .card-icon {
+          animation-name: bounce;
+          animation-duration: 1s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: linear;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #facilityPage {
+    .facilities {
+      .facility-card {
+        height: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

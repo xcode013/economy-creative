@@ -1,0 +1,22 @@
+*Gak harus sama persis. Tiru, Pakai, dan Kembangkan
+
+Refactoring : 
+- Universal Component : 
+- Utilities Class : 
+- Fixed Naming Class : 
+
+
+*note : 
+- Ubah semua file css di setiap components menjadi .module.css
+- Menyatukan semua file css dalam satu Page Folder ke index.css di page folder itu
+
+
+To-do : 
+- Reafactoring NewsCard
+
+
+Font : {
+    p: 12pt > 1rem, 
+    sh: 20pt > 1.667rem, 
+    h: 32pt > 2.667rem,
+}

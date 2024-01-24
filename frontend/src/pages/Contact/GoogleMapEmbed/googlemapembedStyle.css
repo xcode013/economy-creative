@@ -1,0 +1,8 @@
+#contactPage {
+  .googlemap__embed {
+    .googlemap__embed-content {
+      width: 100%;
+      height: 500px;
+    }
+  }
+}

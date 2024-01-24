@@ -1,0 +1,32 @@
+#newsPage {
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    .pagination-btn {
+      background-color: var(--clr-light);
+
+      margin: 20px 0px;
+
+      width: 40px;
+      aspect-ratio: 1 / 1;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      color: var(--clr-dark);
+      font-family: var(--ff-secondary-heading);
+      font-size: var(--fs-body);
+
+      border: 1px solid var(--clr-dark);
+
+      &.pagination-active {
+        background-color: var(--clr-primary-400);
+      }
+    }
+  }
+}

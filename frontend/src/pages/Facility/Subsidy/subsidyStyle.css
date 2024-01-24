@@ -1,0 +1,52 @@
+#facilityPage {
+  .subsidy {
+    padding: var(--section-padding-md);
+
+    header {
+      margin: 40px 0px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+
+      .subsidy-list {
+        display: grid;
+        gap: 20px;
+
+        .list-item {
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 10px;
+
+          .item-icon {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            font-size: var(--fs-body);
+            color: var(--clr-primary-400);
+          }
+
+          .item-content {
+            font-family: var(--ff-secondary-heading);
+            font-size: var(--fs-body);
+            font-weight: var(--fw-bold);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #facilityPage {
+    .subsidy {
+      main {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}

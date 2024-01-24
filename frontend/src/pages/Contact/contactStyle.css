@@ -1,0 +1,15 @@
+#contactPage {
+  padding: var(--section-padding);
+  .wrapper {
+    display: grid;
+    gap: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  #contactPage {
+    .wrapper {
+      grid-template-columns: 0.5fr 1.5fr;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+#homePage {
+  .jumbotron {
+    padding: var(--section-padding);
+
+    .jumbotron-container {
+      position: relative;
+
+      .jumbotron-background {
+        width: 100%;
+        aspect-ratio: 1 / 0.8;
+        object-fit: cover;
+      }
+
+      .jumbotron-content {
+        position: absolute;
+        bottom: 0px;
+
+        width: 100%;
+
+        padding: 20px;
+
+        background-color: rgba(0, 0, 0, 0.3);
+
+        color: var(--light-color);
+
+        .content-text {
+          font-family: var(--text-style-h1);
+          font-size: 1rem;
+
+          margin-bottom: 10px;
+          width: 300px;
+        }
+      }
+    }
+
+    &.left {
+      .jumbotron-container {
+        .jumbotron-content {
+          left: 0px;
+        }
+      }
+    }
+
+    &.right {
+      .jumbotron-container {
+        .jumbotron-content {
+          left: unset;
+          right: 0px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #homePage {
+    .jumbotron {
+      .jumbotron-container {
+        .jumbotron-background {
+          aspect-ratio: unset;
+          height: 450px;
+        }
+
+        .jumbotron-content {
+          width: fit-content;
+          padding: 20px 40px;
+
+          bottom: 20px;
+
+          .content-text {
+            width: fit-content;
+            font-size: var(--fs-600);
+
+            margin-bottom: 20px;
+          }
+        }
+      }
+
+      &.left {
+        .jumbotron-container {
+          .jumbotron-content {
+            left: 20px;
+          }
+        }
+      }
+
+      &.right {
+        .jumbotron-container {
+          .jumbotron-content {
+            left: unset;
+            right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #homePage {
+    .jumbotron {
+      .jumbotron-container {
+        .jumbotron-background {
+          height: 500px;
+        }
+
+        .jumbotron-content {
+          .content-text {
+            font-size: var(--fs-650);
+
+            margin-bottom: 30px;
+          }
+        }
+      }
+    }
+  }
+}

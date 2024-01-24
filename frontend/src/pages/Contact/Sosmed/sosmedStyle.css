@@ -1,0 +1,55 @@
+#contactPage {
+  .sosmed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    margin: 50px 0px 100px;
+
+    .sosmed-headline {
+      text-align: center;
+
+      margin-bottom: 20px;
+    }
+
+    .sosmed-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+
+      .sosmed-icon {
+        background-color: var(--clr-primary-400);
+
+        width: 40px;
+        aspect-ratio: 1 / 1;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 100%;
+
+        transition: background 300ms;
+
+        &:hover {
+          filter: brightness(0.8);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #contactPage {
+    .sosmed {
+      .sosmed-wrapper {
+        .sosmed-icon {
+          width: 50px;
+        }
+      }
+    }
+  }
+}

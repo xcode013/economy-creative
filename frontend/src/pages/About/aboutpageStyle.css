@@ -1,0 +1,17 @@
+#aboutPage {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #aboutPage {
+    width: 700px;
+
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  #aboutPage {
+    width: 95vw;
+  }
+}

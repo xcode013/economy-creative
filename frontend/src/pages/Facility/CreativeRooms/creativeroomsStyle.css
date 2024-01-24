@@ -1,0 +1,14 @@
+#facilityPage {
+  .creativerooms {
+    header {
+      .creativerooms-headline {
+        text-align: center;
+        margin: 40px 0px;
+      }
+    }
+
+    main {
+      padding: var(--section-padding);
+    }
+  }
+}

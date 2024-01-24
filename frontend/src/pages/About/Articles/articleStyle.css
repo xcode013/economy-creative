@@ -1,0 +1,78 @@
+#aboutPage {
+  .article {
+    padding: var(--section-padding-md);
+
+    .article-about {
+      margin-bottom: 40px;
+
+      display: grid;
+      gap: 30px;
+
+      .about-paragraph {
+        text-align: justify;
+      }
+    }
+
+    .article-dropdown {
+      display: grid;
+      gap: 10px;
+
+      .dropdown-item {
+        header {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          padding: 10px 20px;
+          border: 1px solid black;
+
+          .item-headline {
+            font-size: var(--fs-body);
+            font-family: var(--font-poppins-medium);
+            font-weight: var(--fw-bold);
+          }
+
+          .item-icon {
+            transition: 300ms;
+            &.opened {
+              transition: 300ms;
+              rotate: 180deg;
+            }
+          }
+        }
+
+        article {
+          .item-paragraph {
+            height: 0px;
+            padding: 5px 10px;
+
+            overflow: hidden;
+
+            background-color: rgb(231, 231, 231);
+
+            text-indent: 10px;
+
+            strong {
+              font-style: italic;
+            }
+
+            &.opened {
+              height: fit-content;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #aboutPage {
+    .article {
+      display: grid;
+      grid-template-columns: 1fr 400px;
+      align-items: start;
+      gap: 40px;
+    }
+  }
+}

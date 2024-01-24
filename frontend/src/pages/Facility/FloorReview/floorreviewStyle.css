@@ -1,0 +1,103 @@
+#facilityPage {
+  .floorreview {
+    header {
+      margin: 40px 0px 0px;
+
+      nav {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5px;
+
+        button {
+          background-color: var(--primary-color);
+
+          width: 150px;
+          padding: 10px;
+
+          text-transform: capitalize;
+        }
+
+        button.activeNav {
+          border: 1px solid var(--secondary-color);
+
+          color: var(--secondary-color);
+
+          background-color: var(--light-color);
+        }
+      }
+    }
+
+    main {
+      padding: var(--section-padding);
+
+      header.banner-floor {
+        margin-bottom: 10px;
+
+        .banner-img {
+          width: 100%;
+          aspect-ratio: 1 / 0.6;
+          object-fit: cover;
+        }
+      }
+
+      main {
+        .headline {
+          font-size: var(--fs-secondary-heading);
+          font-family: var(--ff-secondary-heading);
+          text-transform: capitalize;
+        }
+
+        .subheadline {
+          font-size: var(--fs-subheading);
+          font-family: var(--font-body);
+
+          margin-bottom: 20px;
+        }
+
+        ul {
+          li {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+
+            margin: 5px;
+
+            font-size: var(--fs-body);
+            color: var(--clr-neutral-600);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  #facilityPage {
+    .floorreview {
+      main {
+        main {
+          padding: 0px;
+
+          .headline {
+            font-size: var(--text-h);
+          }
+
+          .subheadline {
+            font-size: var(--text-sh);
+          }
+
+          ul {
+            li {
+              margin: 10px 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
