@@ -3,11 +3,12 @@ import RootLayout from '../layouts/RootLayout';
 import img1 from '../../assets/images/img1.jpg';
 
 import Hero from './Hero';
-import YouTubeEmbed from '../../components/YouTubeEmbed';
+import Sektors from './Sektors';
 import Jumbotron from './Jumbotron';
 import About from './About';
 import History from './History';
 import Gallery from './Gallery';
+import YoutubeEmbed from './YoutubeEmbed';
 import ArticleNews from './ArticleNews';
 import Collaboators from './Collaborators';
 
@@ -19,7 +20,7 @@ function Home() {
       <div id="homePage" style={{overflowX: 'hidden'}}>
         <Hero />
 
-        <YouTubeEmbed />
+        <Sektors />
 
         <FadeIn direction="x" from="min">
           <Jumbotron ImgBackground={img1} textButton={'Space Booking'}>
@@ -41,6 +42,8 @@ function Home() {
         <History />
 
         <Gallery />
+
+        <YoutubeEmbed />
 
         <ArticleNews />
 

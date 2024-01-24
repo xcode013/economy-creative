@@ -1,0 +1,20 @@
+.sektors {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5px;
+  padding: 5px;
+}
+
+@media (min-width: 768px) {
+  .sektors {
+    padding: var(--section-padding);
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .sektors {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}

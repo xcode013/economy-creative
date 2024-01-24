@@ -1,0 +1,18 @@
+.youtube__embed {
+  padding: var(--section-padding);
+
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .embed__video {
+    width: 100%;
+    aspect-ratio: 1 / 0.7;
+  }
+}
+
+@media (min-width: 768px) {
+  .youtube__embed {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}

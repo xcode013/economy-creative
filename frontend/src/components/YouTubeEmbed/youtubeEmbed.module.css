@@ -1,7 +1,7 @@
 .youtube_embed {
   padding: var(--section-padding);
 
-  .video-embed {
+  .embed__video {
     width: 100%;
     aspect-ratio: 1 / 0.6;
   }
