@@ -2,29 +2,24 @@
 import style from './youtubeEmbed.module.css';
 
 import {FadeIn} from '../../../components/Animations';
+import EmbedFrame from '../../../components/EmbedFrame';
 
 function YoutubeEmbed() {
   return (
     <section className={`${style['youtube__embed']}`}>
       <FadeIn>
-        <iframe
-          className={`${style.embed__video}`}
-          title="what"
-          src="https://www.youtube.com/embed/xqm5f9mQQxw?autoplay=0"
+        <EmbedFrame
+          urlLink={'https://www.youtube.com/embed/pW-sHnkA0Hw?autoplay=0'}
         />
       </FadeIn>
       <FadeIn delay={0.1}>
-        <iframe
-          className={`${style.embed__video}`}
-          title="what"
-          src="https://www.youtube.com/embed/xqm5f9mQQxw?autoplay=0"
+        <EmbedFrame
+          urlLink={'https://www.youtube.com/embed/pW-sHnkA0Hw?autoplay=0'}
         />
       </FadeIn>
       <FadeIn delay={0.2}>
-        <iframe
-          className={`${style.embed__video}`}
-          title="what"
-          src="https://www.youtube.com/embed/xqm5f9mQQxw?autoplay=0"
+        <EmbedFrame
+          urlLink={'https://www.youtube.com/embed/pW-sHnkA0Hw?autoplay=0'}
         />
       </FadeIn>
     </section>

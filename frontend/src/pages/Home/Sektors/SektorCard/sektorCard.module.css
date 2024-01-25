@@ -1,7 +1,7 @@
 .card-sektor {
   background-color: var(--clr-light);
 
-  width: 100%;
+  width: 200px;
   aspect-ratio: 1 / 1;
   padding: 5px;
 
@@ -55,7 +55,7 @@
 @media (min-width: 1024px) {
   .card-sektor {
     .card-label {
-      font-size: var(--fs-650);
+      font-size: var(--fs-700);
     }
   }
 

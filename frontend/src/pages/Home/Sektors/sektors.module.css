@@ -1,20 +1,20 @@
-.sektors {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5px;
-  padding: 5px;
-}
+.sektor {
+  padding: var(--section-padding);
+  margin-top: 20px;
 
-@media (min-width: 768px) {
-  .sektors {
-    padding: var(--section-padding);
-    grid-template-columns: repeat(4, 1fr);
-    gap: 8px;
+  .sektor-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 20px;
   }
-}
 
-@media (min-width: 1024px) {
-  .sektors {
-    grid-template-columns: repeat(5, 1fr);
+  .sektor-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
   }
 }

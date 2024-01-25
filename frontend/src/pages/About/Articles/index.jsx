@@ -1,14 +1,7 @@
-import {useState} from 'react';
-
-import {FaChevronDown} from 'react-icons/fa6';
-
 import './articleStyle.css';
+import DropdownArticle from './DropdownArticle';
 
 function Articles() {
-  const [isOpenDD1, setOpenDD1] = useState(false);
-  const [isOpenDD2, setOpenDD2] = useState(false);
-  const [isOpenDD3, setOpenDD3] = useState(false);
-
   return (
     <section className="article">
       <article className="article-about">
@@ -49,74 +42,26 @@ function Articles() {
         </p>
       </article>
 
-      <ul className="article-dropdown">
-        <li className="dropdown-item">
-          <header onClick={() => setOpenDD1((prev) => !prev)}>
-            <h1 className="item-headline">Lorem ipsum dolor</h1>
-            <i className={`item-icon ${isOpenDD1 ? 'opened' : ''}`}>
-              <FaChevronDown />
-            </i>
-          </header>
-          <article>
-            <p
-              className={`item-paragraph paragraph ${
-                isOpenDD1 ? 'opened' : ''
-              }`}>
-              <strong>Lorem ipsum dolor</strong> sit amet consectetur
-              adipisicing elit. Voluptas eos perferendis soluta ipsam officiis
-              provident ducimus, vitae molestiae commodi, ratione, nam
-              laboriosam dolorem ipsum cupiditate quos atque iusto doloribus?
-              Suscipit cupiditate vel iste iusto quis voluptatem alias
-              voluptatum quia, culpa asperiores? Natus fuga necessitatibus,
-              voluptatum nesciunt earum repellendus quis quasi!
-            </p>
-          </article>
-        </li>
-        <li className="dropdown-item">
-          <header onClick={() => setOpenDD2((prev) => !prev)}>
-            <h1 className="item-headline">Lorem ipsum dolor</h1>
-            <i className={`item-icon ${isOpenDD2 ? 'opened' : ''}`}>
-              <FaChevronDown />
-            </i>
-          </header>
-          <article>
-            <p
-              className={`item-paragraph paragraph ${
-                isOpenDD2 ? 'opened' : ''
-              }`}>
-              <strong>Lorem ipsum dolor</strong> sit amet consectetur
-              adipisicing elit. Voluptas eos perferendis soluta ipsam officiis
-              provident ducimus, vitae molestiae commodi, ratione, nam
-              laboriosam dolorem ipsum cupiditate quos atque iusto doloribus?
-              Suscipit cupiditate vel iste iusto quis voluptatem alias
-              voluptatum quia, culpa asperiores? Natus fuga necessitatibus,
-              voluptatum nesciunt earum repellendus quis quasi!
-            </p>
-          </article>
-        </li>
-        <li className="dropdown-item">
-          <header onClick={() => setOpenDD3((prev) => !prev)}>
-            <h1 className="item-headline">Lorem ipsum dolor</h1>
-            <i className={`item-icon ${isOpenDD3 ? 'opened' : ''}`}>
-              <FaChevronDown />
-            </i>
-          </header>
-          <article>
-            <p
-              className={`item-paragraph paragraph ${
-                isOpenDD3 ? 'opened' : ''
-              }`}>
-              <strong>Lorem ipsum dolor</strong> sit amet consectetur
-              adipisicing elit. Voluptas eos perferendis soluta ipsam officiis
-              provident ducimus, vitae molestiae commodi, ratione, nam
-              laboriosam dolorem ipsum cupiditate quos atque iusto doloribus?
-              Suscipit cupiditate vel iste iusto quis voluptatem alias
-              voluptatum quia, culpa asperiores? Natus fuga necessitatibus,
-              voluptatum nesciunt earum repellendus quis quasi!
-            </p>
-          </article>
-        </li>
-      </ul>
+      <aside className="article-dropdown">
+        <DropdownArticle
+          title={'Lorem ipsum dolor'}
+          article={
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quia beatae ex alias dicta a officiis totam adipisci similique, aspernatur, repudiandae doloribus aut quos sequi illo quod voluptatem maiores sit.'
+          }
+        />
+        <DropdownArticle
+          title={'Lorem ipsum dolor'}
+          article={
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quia beatae ex alias dicta a officiis totam adipisci similique, aspernatur, repudiandae doloribus aut quos sequi illo quod voluptatem maiores sit.'
+          }
+        />
+        <DropdownArticle
+          title={'Lorem ipsum dolor'}
+          article={
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid quia beatae ex alias dicta a officiis totam adipisci similique, aspernatur, repudiandae doloribus aut quos sequi illo quod voluptatem maiores sit.'
+          }
+        />
+      </aside>
     </section>
   );
 }

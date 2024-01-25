@@ -1,6 +1,6 @@
 import RootLayout from '../layouts/RootLayout';
 import PageHeader from '../../components/PageHeader';
-import YouTubeEmbed from '../../components/YouTubeEmbed';
+import YoutubeEmbed from './YoutubeEmbed';
 import Articles from './Articles';
 
 import './aboutpageStyle.css';
@@ -10,7 +10,7 @@ function About() {
     <RootLayout>
       <PageHeader content={'About'} />
       <div id="aboutPage">
-        <YouTubeEmbed />
+        <YoutubeEmbed />
         <Articles />
       </div>
     </RootLayout>

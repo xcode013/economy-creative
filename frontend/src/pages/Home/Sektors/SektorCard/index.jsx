@@ -6,6 +6,7 @@ function SektorCard({icon, label}) {
     return (
       <div className={`${style['card-sektor']}`}>
         <h4 className={`${style['card-label']}`}>{label}</h4>
+        
       </div>
     );
   }
