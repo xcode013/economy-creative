@@ -1,12 +1,11 @@
 /* eslint-disable react/prop-types */
 
-import Button from '../../../components/Button';
-import './jumbotronStyle.css';
+import Button from '../../components/Button';
 
-function Jumbotron({ImgBackground, contentPlacement, children, textButton}) {
+function JumbotronSection({ImgBackground, onRight, children, textButton}) {
   return (
     <section
-      className={`jumbotron ${contentPlacement ? contentPlacement : 'left'}`}>
+      className={`jumbotron-section ${onRight ? 'on-right' : 'on-left'}`}>
       <div className="jumbotron-container">
         <img
           src={ImgBackground}
@@ -25,4 +24,4 @@ function Jumbotron({ImgBackground, contentPlacement, children, textButton}) {
   );
 }
 
-export default Jumbotron;
+export default JumbotronSection;

@@ -16,7 +16,6 @@ function CreativeFloorSlide({title, slideDatas}) {
             autoplay: true,
             snap: true,
             arrows: false,
-            pagination: false,
             type: 'loop',
           }}>
           {slideDatas

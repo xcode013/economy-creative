@@ -1,12 +1,11 @@
 // import YouTubeEmbed from '../../../components/YouTubeEmbed';
-import style from './youtubeEmbed.module.css';
 
-import {FadeIn} from '../../../components/Animations';
-import EmbedFrame from '../../../components/EmbedFrame';
+import {FadeIn} from '../../components/Animations';
+import EmbedFrame from '../../components/EmbedFrame';
 
-function YoutubeEmbed() {
+function YoutubeEmbedSection() {
   return (
-    <section className={`${style['youtube__embed']}`}>
+    <section className={`embed-youtube-section`}>
       <FadeIn>
         <EmbedFrame
           urlLink={'https://www.youtube.com/embed/pW-sHnkA0Hw?autoplay=0'}
@@ -26,4 +25,4 @@ function YoutubeEmbed() {
   );
 }
 
-export default YoutubeEmbed;
+export default YoutubeEmbedSection;

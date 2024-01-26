@@ -2,48 +2,51 @@ import RootLayout from '../layouts/RootLayout';
 
 import img1 from '../../assets/images/img1.jpg';
 
-import Hero from './Hero';
-import Sektors from './Sektors';
-import Jumbotron from './Jumbotron';
-import About from './About';
-import History from './History';
-import Gallery from './Gallery';
-import YoutubeEmbed from './YoutubeEmbed';
 import ArticleNews from './ArticleNews';
 import Collaboators from './Collaborators';
 
+import HeroSection from './HeroSection';
+import SectorSection from './SectorSection';
+import JumbotronSection from './JumbotronSection';
+import AboutSection from './AboutSection';
+import HistorySection from './HistorySection';
+import GallerySection from './GallerySection';
+import YoutubeEmbedSection from './YoutubeEmbedSection';
+
 import {FadeIn} from '../../components/Animations';
+
+import './home.css';
 
 function Home() {
   return (
     <RootLayout>
-      <div id="homePage" style={{overflowX: 'hidden'}}>
-        <Hero />
+      <div id="homePage" className="home-page">
+        <HeroSection />
 
-        <Sektors />
+        <SectorSection />
 
         <FadeIn direction="x" from="min">
-          <Jumbotron ImgBackground={img1} textButton={'Space Booking'}>
+          <JumbotronSection ImgBackground={img1} textButton={'Space Booking'}>
             Create and Collaboratins together at <br /> Bojonegoro Creative Hub
-          </Jumbotron>
+          </JumbotronSection>
         </FadeIn>
 
-        <About />
+        <AboutSection />
 
         <FadeIn direction="x">
-          <Jumbotron
+          <JumbotronSection
             ImgBackground={img1}
             textButton={'BCH Visit'}
-            contentPlacement={'right'}>
+            onRight={true}>
             Plan Your Visit to <br /> Bojonegoro Creative Hub
-          </Jumbotron>
+          </JumbotronSection>
         </FadeIn>
 
-        <History />
+        <HistorySection />
 
-        <Gallery />
+        <GallerySection />
 
-        <YoutubeEmbed />
+        <YoutubeEmbedSection />
 
         <ArticleNews />
 

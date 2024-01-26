@@ -48,7 +48,7 @@
             overflow-y: hidden;
 
             main {
-              transform: translateY(65%);
+              transform: translateY(85%);
 
               height: 100%;
 
@@ -82,7 +82,7 @@
 
           article {
             main {
-              transform: translateY(0%);
+              transform: translateY(30%);
 
               transition: 300ms;
             }
@@ -123,6 +123,17 @@
             font-size: var(--text-sh);
 
             padding-left: 10vw;
+          }
+
+          .creativefloorslide-content {
+            article {
+              main {
+                .content-description {
+                  width: 500px;
+                  margin: auto;
+                }
+              }
+            }
           }
         }
       }
