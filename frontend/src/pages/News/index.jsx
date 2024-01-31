@@ -1,4 +1,3 @@
-import RootLayout from '../layouts/RootLayout';
 import PageHeader from '../../components/PageHeader';
 import NewsList from './NewsList';
 import Pagination from './Pagination';
@@ -29,7 +28,7 @@ function News() {
   }, [getDataPerPage, currentPage]);
 
   return (
-    <RootLayout>
+    <>
       <PageHeader content={'News'} />
       <div id="newsPage">
         <NewsList listData={listData} />
@@ -40,7 +39,7 @@ function News() {
           paginationOnClickHandler={setCurrentPageHandler}
         />
       </div>
-    </RootLayout>
+    </>
   );
 }
 

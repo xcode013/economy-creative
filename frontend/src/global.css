@@ -19,7 +19,7 @@
 }
 
 :root {
-  --primary-color: #fcae1e;
+  /* --primary-color: #fcae1e;
   --secondary-color: #956917;
   --light-color: #ffffff;
   --dark-color: #000000;
@@ -30,15 +30,13 @@
 
   --text-style-h1: 'Poppins Bold';
   --text-style-h2: 'Poppins Medium';
-  --text-style-p: 'Poppins Regular';
+  --text-style-p: 'Poppins Regular'; */
 
   --font-poppins-bold: 'Poppins Bold';
   --font-poppins-medium: 'Poppins Medium';
   --font-poppins-regular: 'Poppins Regular';
 
   --lineheight-p: 30px;
-
-  --navbar-height: 60px;
 
   --section-padding: 10px;
   --section-padding-md: calc(var(--section-padding) * 2);
@@ -148,26 +146,24 @@ button {
   color: var(--clr-neutral-600);
 }
 
-.section {
-  padding: 15px;
+.s-p--md {
+  padding: 20px;
+}
+
+.s-p {
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
-  :root {
-    --text-sm: 0.875rem;
-
-    --text-p: 0.875rem;
-  }
 }
 
 @media (min-width: 1024px) {
-  :root {
-    --navbar-height: 90px;
+  .s-p {
+    padding: 10px 8vw;
+  }
 
-    --section-padding: 15px;
-
-    --section-padding: 10px 8vw;
-    --section-padding-md: 30px 8vw;
+  .s-p--md {
+    padding: 30px 8vw;
   }
 }
 

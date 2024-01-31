@@ -2,8 +2,6 @@
   overflow: hidden;
 
   .hero-section {
-    padding-bottom: var(--section-padding);
-
     .splide {
       .splide__arrows {
         .splide__arrow {
@@ -90,7 +88,7 @@
             .content-heading {
               text-align: start;
 
-              border-left: 2px solid var(--light-color);
+              border-left: 2px solid var(--clr-light);
 
               padding-left: 10px;
             }
@@ -101,8 +99,6 @@
   }
 
   .sector-section {
-    padding: var(--section-padding);
-
     margin-top: 20px;
     margin-bottom: 50px;
 
@@ -190,8 +186,6 @@
   }
 
   .jumbotron-section {
-    padding: var(--section-padding);
-
     .jumbotron-container {
       position: relative;
 
@@ -211,10 +205,10 @@
 
         background-color: rgba(0, 0, 0, 0.3);
 
-        color: var(--light-color);
+        color: var(--clr-light);
 
         .content-text {
-          font-family: var(--text-style-h1);
+          font-family: var(--ff-primary-heading);
           font-size: 1rem;
 
           margin-bottom: 10px;
@@ -246,8 +240,6 @@
     grid-template-columns: 1fr;
     gap: 70px;
 
-    padding: var(--section-padding-md);
-
     .about-content {
       .content-text {
         margin-top: 25px;
@@ -277,7 +269,6 @@
   }
 
   .history-section {
-    padding: var(--section-padding-md);
     display: grid;
     grid-template-columns: 1fr;
     gap: 40px;
@@ -305,12 +296,12 @@
           align-items: center;
           justify-content: center;
 
-          background-color: var(--primary-color);
+          background-color: var(--clr-primary-400);
 
           .content-text {
             text-align: left;
             font-size: var(--fs-base);
-            font-family: var(--font-poppins-bold);
+            font-family: var(--ff-primary-heading);
           }
         }
       }
@@ -393,8 +384,6 @@
         grid-template-columns: 1fr;
         gap: 20px;
 
-        padding: var(--section-padding);
-
         margin-top: 30px;
 
         .card-show {
@@ -444,8 +433,6 @@
   }
 
   .embed-youtube-section {
-    padding: var(--section-padding);
-
     margin-top: 30px;
 
     display: grid;
@@ -454,6 +441,78 @@
     .embed-video {
       width: 100%;
       aspect-ratio: 1 / 0.7;
+    }
+  }
+
+  .news-section {
+    margin-top: 40px;
+
+    .news-header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 5px;
+
+      margin-bottom: 20px;
+
+      .header-subheading {
+        color: var(--clr-primary-400);
+        margin-bottom: -15px;
+      }
+    }
+  }
+
+  .collaboration-section {
+    .collaboration-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+
+      padding: 30px;
+
+      background-color: var(--clr-light);
+
+      .header-heading {
+        text-align: center;
+      }
+    }
+
+    .collaboration-body {
+      .body-collaborator {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+
+        height: 300px;
+
+        .collaborator-brand {
+          width: 100px;
+          aspect-ratio: 1 / 1;
+          object-fit: contain;
+        }
+      }
+
+      &:hover {
+        .body-collaborator {
+          .collaborator-brand {
+            opacity: 0.4;
+
+            &:hover {
+              opacity: 1;
+
+              animation-name: bounce;
+              animation-duration: 3s;
+              animation-iteration-count: infinite;
+              animation-direction: alternate;
+              animation-timing-function: ease-in-out;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -471,7 +530,7 @@
             height: unset;
             aspect-ratio: 1 / 1;
 
-            background-color: var(--light-color);
+            background-color: var(--clr-light);
 
             opacity: 1;
 
@@ -594,6 +653,29 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
     }
+
+    .collaboration-section {
+      position: relative;
+      .collaboration-header {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        z-index: 8;
+
+        padding: var(--section-padding-md);
+        padding-right: 60px;
+
+        align-items: start;
+        gap: 40px;
+
+        .header-heading {
+          text-align: left;
+
+          width: 100px;
+        }
+      }
+    }
   }
 }
 
@@ -700,7 +782,7 @@
 
         .header-headline {
           font-size: 2.3rem;
-          font-family: var(--font-poppins-bold);
+          font-family: var(--ff-primary-heading);
         }
       }
 
@@ -715,6 +797,16 @@
           .card-show {
             box-sizing: border-box;
           }
+        }
+      }
+    }
+
+    .collaboration-section {
+      .collaboration-header {
+        aspect-ratio: 1.3 / 1;
+
+        .header-heading {
+          width: 200px;
         }
       }
     }

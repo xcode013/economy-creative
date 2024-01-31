@@ -4,7 +4,7 @@ import {SectorCard} from './HomeComponents';
 
 function SectorSection() {
   return (
-    <section className={`sector-section`}>
+    <section className={`sector-section s-p`}>
       <header className={`sector-header`}>
         <h1 className={`sector-heading heading-md`}>17 sector Ekonomi</h1>
       </header>

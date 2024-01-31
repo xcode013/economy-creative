@@ -1,19 +1,19 @@
-import RootLayout from '../layouts/RootLayout';
 import PageHeader from '../../components/PageHeader';
-import YoutubeEmbed from './YoutubeEmbed';
-import Articles from './Articles';
 
-import './aboutpageStyle.css';
+import EmbedYoutube from './EmbedYoutube';
+import Article from './Article';
+
+import './about.css';
 
 function About() {
   return (
-    <RootLayout>
+    <div className="about-page">
       <PageHeader content={'About'} />
-      <div id="aboutPage">
-        <YoutubeEmbed />
-        <Articles />
-      </div>
-    </RootLayout>
+      <main className="about-body">
+        <EmbedYoutube />
+        <Article />
+      </main>
+    </div>
   );
 }
 

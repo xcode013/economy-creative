@@ -1,21 +1,23 @@
+// Library-Component
 import {Splide, SplideSlide} from '@splidejs/react-splide';
-import Button from '../../../components/Button';
 
-import brandEx from '../../../assets/react.svg';
+// Global-Component
+import Button from '../../components/Button';
 
-import './collaboratorsStyle.css';
+// Assets
+import brandEx from '../../assets/react.svg';
 
-function Collaboators() {
+function CollaborationSection() {
   return (
-    <section className="collaborators">
-      <header>
-        <h1 className="headline heading-md">Potensi kerjasama</h1>
+    <section className="collaboration-section s-p">
+      <header className="collaboration-header">
+        <h1 className="header-heading heading-md">Potensi kerjasama</h1>
         <Button className={'primary'} href="/">
           Collaborate Now
         </Button>
       </header>
 
-      <main>
+      <main className="collaboration-body">
         <Splide
           options={{
             rewind: true,
@@ -40,9 +42,9 @@ function Collaboators() {
             },
           }}>
           <SplideSlide>
-            <div className="brands">
-              <img src={brandEx} alt="" className="brand-collaborator" />
-              <img src={brandEx} alt="" className="brand-collaborator" />
+            <div className="body-collaborator">
+              <img src={brandEx} alt="" className="collaborator-brand" />
+              <img src={brandEx} alt="" className="collaborator-brand" />
             </div>
           </SplideSlide>
         </Splide>
@@ -51,4 +53,4 @@ function Collaboators() {
   );
 }
 
-export default Collaboators;
+export default CollaborationSection;

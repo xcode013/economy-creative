@@ -4,10 +4,14 @@
       .about-banner {
         .banner-img {
           width: 100%;
-          aspect-ratio: 1 / 1;
+          aspect-ratio: 1 / 0.8;
           object-fit: cover;
 
           filter: grayscale(1);
+
+          @media (min-width: 1024px) {
+            aspect-ratio: 1 / 0.5;
+          }
         }
       }
 

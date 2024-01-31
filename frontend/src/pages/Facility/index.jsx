@@ -1,4 +1,3 @@
-import RootLayout from '../layouts/RootLayout';
 import PageHeader from '../../components/PageHeader';
 
 import Facilities from './Facilities';
@@ -10,7 +9,7 @@ import './facilityStyle.css';
 
 function Facility() {
   return (
-    <RootLayout>
+    <>
       <PageHeader content={'Facility'} />
       <div id="facilityPage">
         <Facilities />
@@ -18,7 +17,7 @@ function Facility() {
         <Subsidy />
         <FloorReview />
       </div>
-    </RootLayout>
+    </>
   );
 }
 

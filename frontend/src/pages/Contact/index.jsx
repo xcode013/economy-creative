@@ -1,4 +1,3 @@
-import RootLayout from '../layouts/RootLayout';
 import PageHeader from '../../components/PageHeader';
 import ContactInfo from './ContactInfo';
 import About from './About';
@@ -9,7 +8,7 @@ import Sosmed from './Sosmed';
 
 function Contact() {
   return (
-    <RootLayout>
+    <>
       <PageHeader content={'Contact'} />
       <div id="contactPage">
         <div className="wrapper">
@@ -19,7 +18,7 @@ function Contact() {
         <Sosmed />
         <GoogleMapEmbed />
       </div>
-    </RootLayout>
+    </>
   );
 }
 

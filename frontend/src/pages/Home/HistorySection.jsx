@@ -5,7 +5,7 @@ import {FadeIn} from '../../components/Animations';
 
 function HistorySection() {
   return (
-    <section className="history-section">
+    <section className="history-section s-p--md">
       <header className="history-header">
         <FadeIn direction="x" from={'min'}>
           <div className="header-banner">

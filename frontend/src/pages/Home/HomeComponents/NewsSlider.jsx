@@ -1,9 +1,12 @@
 /* eslint-disable react/prop-types */
 
+// Ex-Library
 import {Splide, SplideSlide} from '@splidejs/react-splide';
-import NewsCard from '../../../../components/Cards/NewsCard';
 
-function NewsListSlider({newsData}) {
+// In-Assets
+import {NewsCard} from '../../../components/Cards';
+
+function NewsSlider({newsData}) {
   return (
     <Splide
       options={{
@@ -49,4 +52,4 @@ function NewsListSlider({newsData}) {
   );
 }
 
-export default NewsListSlider;
+export default NewsSlider;

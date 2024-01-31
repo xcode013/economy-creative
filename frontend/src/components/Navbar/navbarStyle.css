@@ -1,5 +1,5 @@
 #navbar {
-  background-color: var(--light-color);
+  background-color: var(--clr-light);
 
   height: 60px;
 
@@ -19,10 +19,10 @@
     left: 0px;
     top: 0px;
 
-    height: var(--navbar-height);
+    height: 100%;
     aspect-ratio: 1 / 1;
 
-    background-color: var(--light-color);
+    background-color: var(--clr-light);
 
     cursor: pointer;
 
@@ -50,7 +50,7 @@
     }
 
     .brand-typography {
-      font-family: var(--text-style-h1);
+      font-family: var(--ff-primary-heading);
     }
   }
 
@@ -65,7 +65,7 @@
 
     width: var(--sidebar-width);
 
-    background-color: var(--light-color);
+    background-color: var(--clr-light);
 
     display: flex;
     justify-content: start;
@@ -84,9 +84,10 @@
     .trigger_close-btn {
       position: absolute;
       right: calc(0px - var(--close__button-width));
-      top: calc(10px + var(--navbar-height));
+      top: 50%;
+      transform: translateY(-50%);
 
-      background-color: var(--light-color);
+      background-color: var(--clr-light);
 
       width: var(--close__button-width);
       aspect-ratio: 1 / 1;
@@ -114,9 +115,9 @@
         height: inherit;
         width: inherit;
 
-        font-family: var(--text-style-p);
+        font-family: var(--fs-body);
         font-size: var(--fs-300);
-        color: var(--secondary-color);
+        color: var(--clr-neutral-600);
 
         transition: opacity 300ms, font-weight 300ms;
 

@@ -5,7 +5,7 @@ import Button from '../../components/Button';
 function JumbotronSection({ImgBackground, onRight, children, textButton}) {
   return (
     <section
-      className={`jumbotron-section ${onRight ? 'on-right' : 'on-left'}`}>
+      className={`jumbotron-section s-p ${onRight ? 'on-right' : 'on-left'}`}>
       <div className="jumbotron-container">
         <img
           src={ImgBackground}

@@ -41,37 +41,37 @@ function GallerySection() {
           }}>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img1} alt="" className="link-image" />
+              <img src={img1} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img2} alt="" className="link-image" />
+              <img src={img2} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img3} alt="" className="link-image" />
+              <img src={img3} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img1} alt="" className="link-image" />
+              <img src={img1} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img2} alt="" className="link-image" />
+              <img src={img2} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
           <SplideSlide>
             <Link className="body-link">
-              <img src={img3} alt="" className="link-image" />
+              <img src={img3} alt="" loading="lazy" className="link-image" />
             </Link>
           </SplideSlide>
         </Splide>
 
-        <div className="body-card">
+        <div className="body-card s-p">
           <FadeIn delay={0.2}>
             <div className="card-show">
               <h1 className="card-headline">2,217</h1>

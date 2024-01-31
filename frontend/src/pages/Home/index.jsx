@@ -1,9 +1,9 @@
-import RootLayout from '../layouts/RootLayout';
+// Globa-Component
+import {FadeIn} from '../../components/Animations';
 
+// Assets
 import img1 from '../../assets/images/img1.jpg';
-
-import ArticleNews from './ArticleNews';
-import Collaboators from './Collaborators';
+import './home.css';
 
 import HeroSection from './HeroSection';
 import SectorSection from './SectorSection';
@@ -12,47 +12,43 @@ import AboutSection from './AboutSection';
 import HistorySection from './HistorySection';
 import GallerySection from './GallerySection';
 import YoutubeEmbedSection from './YoutubeEmbedSection';
-
-import {FadeIn} from '../../components/Animations';
-
-import './home.css';
+import NewsSection from './NewsSection';
+import CollaborationSection from './Collaboration';
 
 function Home() {
   return (
-    <RootLayout>
-      <div id="homePage" className="home-page">
-        <HeroSection />
+    <div id="homePage" className="home-page">
+      <HeroSection />
 
-        <SectorSection />
+      <SectorSection />
 
-        <FadeIn direction="x" from="min">
-          <JumbotronSection ImgBackground={img1} textButton={'Space Booking'}>
-            Create and Collaboratins together at <br /> Bojonegoro Creative Hub
-          </JumbotronSection>
-        </FadeIn>
+      <FadeIn direction="x" from="min">
+        <JumbotronSection ImgBackground={img1} textButton={'Space Booking'}>
+          Create and Collaboratins together at <br /> Bojonegoro Creative Hub
+        </JumbotronSection>
+      </FadeIn>
 
-        <AboutSection />
+      <AboutSection />
 
-        <FadeIn direction="x">
-          <JumbotronSection
-            ImgBackground={img1}
-            textButton={'BCH Visit'}
-            onRight={true}>
-            Plan Your Visit to <br /> Bojonegoro Creative Hub
-          </JumbotronSection>
-        </FadeIn>
+      <FadeIn direction="x">
+        <JumbotronSection
+          ImgBackground={img1}
+          textButton={'BCH Visit'}
+          onRight={true}>
+          Plan Your Visit to <br /> Bojonegoro Creative Hub
+        </JumbotronSection>
+      </FadeIn>
 
-        <HistorySection />
+      <HistorySection />
 
-        <GallerySection />
+      <GallerySection />
 
-        <YoutubeEmbedSection />
+      <YoutubeEmbedSection />
 
-        <ArticleNews />
+      <NewsSection />
 
-        <Collaboators />
-      </div>
-    </RootLayout>
+      <CollaborationSection />
+    </div>
   );
 }
 

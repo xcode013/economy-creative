@@ -5,7 +5,7 @@ import EmbedFrame from '../../components/EmbedFrame';
 
 function YoutubeEmbedSection() {
   return (
-    <section className={`embed-youtube-section`}>
+    <section className={`embed-youtube-section s-p`}>
       <FadeIn>
         <EmbedFrame
           urlLink={'https://www.youtube.com/embed/pW-sHnkA0Hw?autoplay=0'}

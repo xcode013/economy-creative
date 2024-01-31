@@ -1,0 +1,38 @@
+.text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: fit-content;
+
+  .text-letter-container {
+    width: 60px;
+    aspect-ratio: 1 / 1.5;
+
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .letter {
+      font-family: var(--ff-primary-heading);
+      font-size: var(--fs-primary-heading);
+      text-transform: capitalize;
+    }
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(-100%);
+  }
+  10%,
+  90% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}

@@ -1,9 +1,8 @@
-import './articleStyle.css';
-import DropdownArticle from './DropdownArticle';
+import {DropdownArticle} from './aboutComponent';
 
-function Articles() {
+function Article() {
   return (
-    <section className="article">
+    <section className="article-section s-p--md">
       <article className="article-about">
         <p className="about-paragraph paragraph-lg">
           Malang Creative Center (MCC) adalah pusat kegiatan bagi pelaku yang
@@ -35,7 +34,7 @@ function Articles() {
           mendukung semua sub-sektor dalam industri kreatif dan menjadi
           pendorong utama dalam pengembangan ekonomi kreatif di Kota Malang.
         </p>
-        <p className="about-paragraph">
+        <p className="about-paragraph paragraph-lg">
           Secara konseptual fungsi bangunan MCC juga terbagi 2, yaitu Area
           Empowerment dan Area Komersial dengan proporsi sebanyak 60%
           dialokasikan untuk Area Empowerment.
@@ -66,4 +65,4 @@ function Articles() {
   );
 }
 
-export default Articles;
+export default Article;

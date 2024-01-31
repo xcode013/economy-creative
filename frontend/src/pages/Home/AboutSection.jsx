@@ -1,5 +1,5 @@
 import {FadeIn} from '../../components/Animations';
-import FacilityItemList from './HomeComponents/FacilityItemList';
+import {FacilityItemList} from './HomeComponents';
 
 function AboutSection() {
   const facilityList = [
@@ -10,7 +10,7 @@ function AboutSection() {
     'Entertainment Rooftop',
   ];
   return (
-    <section className="about-section">
+    <section className="about-section s-p--md">
       <div className="about-content">
         <FadeIn>
           <h1 className="content-heading heading-md">
